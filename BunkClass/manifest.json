@@ -1,0 +1,15 @@
+{
+	"name": "BunkClass",
+	"version": "1.0",
+	"description": "Do you want to go out or sleep in class. Well BunkClass got your back. You will be exited from the meet when you buddies exit.",
+	"manifest_version": 2,
+	"browser_action":{
+		"default_icon": "icon.png"
+	},
+	"content_scripts":[
+		{
+			"matches": ["https://meet.google.com/*"],
+			"js": ["contents.js"]
+		}
+	]
+}
